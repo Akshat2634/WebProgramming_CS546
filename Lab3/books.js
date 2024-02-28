@@ -103,7 +103,7 @@ const minMaxPrice = async () => {
   };
 };
 
-const ssearchBooksByPublisher = async (publisher) => {
+const searchBooksByPublisher = async (publisher) => {
   if (
     !publisher ||
     typeof publisher !== "string" ||
@@ -133,5 +133,5 @@ export {
   booksByPageCount,
   sameYear,
   minMaxPrice,
-  ssearchBooksByPublisher,
+  searchBooksByPublisher,
 };
