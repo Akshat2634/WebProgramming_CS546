@@ -33,7 +33,7 @@ import {
   booksByPageCount,
   sameYear,
   minMaxPrice,
-  ssearchBooksByPublisher,
+  searchBooksByPublisher,
 } from "./books.js";
 
 //authors.js
@@ -168,14 +168,14 @@ try {
 
 // ssearchBooksByPublisher
 try {
-  const a = await ssearchBooksByPublisher("Skilith");
+  const a = await searchBooksByPublisher("Skilith");
   console.log(a);
 } catch (error) {
   console.log(error.message);
 }
 
 try {
-  const a = await ssearchBooksByPublisher("foo bar"); // Throws Error
+  const a = await searchBooksByPublisher("foo bar"); // Throws Error
   console.log(a);
 } catch (error) {
   console.log(error.message);
