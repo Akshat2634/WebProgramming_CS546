@@ -1,0 +1,20 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "My lab 8 module",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Akshat Sahu 20022122",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "md5": "^2.3.0"
+  }
+}

@@ -1,0 +1,120 @@
+/*This file should have 10 CSS rulesets */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #54b0e5;
+}
+
+main {
+  margin: 15px;
+}
+
+.thumbnail {
+  height: 117px;
+  width: 75px;
+}
+
+.not-found {
+  color: rgb(168, 36, 36);
+  font-size: 1.5em;
+}
+
+.my_coolratings_table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.my_coolratings_table th,
+.my_coolratings_table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  background-color: rgb(140, 234, 237);
+}
+
+a {
+  color: #08404e;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+.movie-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.movie-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.movie-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+  padding: 2px;
+}
+
+.info-data {
+  margin-left: 10px;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+p {
+  color: #333;
+  font-size: 1.5em;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+  font-size: 2em;
+}
+
+input {
+  display: block;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #010101;
+}
+h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+h3 {
+  color: #333;
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.my_coolratings_table tr {
+  margin-bottom: 15px;
+}
+
+img {
+  padding: 5px;
+  border: 2px solid #bdbdbd;
+}
