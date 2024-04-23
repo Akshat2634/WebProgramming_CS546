@@ -1,0 +1,33 @@
+{{!-- {{! This will be your default layout for all handlebars file rendered. This will be inherited by all other templates. }}
+{{! Refer lecture code to learn more on how this works
+don't forget to include your css and your client-side script file references in the layout.
+for the theme, you can simply read the themePreference for the user and inject it into the body element
+{{!
+
+<body class="{{themePreference}}">
+}} --}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/styles.css" >
+  </head>
+  <body class="{{themePreference}}">
+    <header>
+      <h1>{{header}}</h1>
+    </header>
+
+    <main>
+
+      {{{body}}}
+
+    </main>
+
+    <footer>
+      <p>{{footer}}</p>
+    </footer>
+    <script src="/public/js/client_side_validation.js"></script>
+  </body>
+</html>

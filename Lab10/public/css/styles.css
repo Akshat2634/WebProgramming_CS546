@@ -1,0 +1,246 @@
+/* You will create a CSS stylesheet in /public/css/styles.css; this file should have at least 5 rulesets.  You will need to utilize all 5 rulesets on each of the pages (not every page has to use all 5 rulesets each but all 5 rulesets must be utilized by the various pages in your application).  So you can have some rulesets for one page, some for another page but there needs to be at least 5 total rulesets that are used between all the pages. There are two specific rulesets you need to create in addition to the 5 other rulesets:  .light and .dark.  Depending of the user's theme preferences stored in the session, your pages will be displayed using the user's theme preferences. If their theme preference is "light" then the background color of the page should be white and the text color of the page should be black.  If their theme preference is "dark" then the background color of the page should be black and the text color should be white.  HINT: You can just set the body element's class to either dark or light depending on their themePreference stored in the session. obviously, the theme preference only is active after a user is logged in.  */
+
+/* two rulesets you MUST implement in addition to the other 5:
+
+.light{
+    
+}
+
+.dark{
+
+}
+
+*/
+/* Rule 1 */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Rule 2 */
+h1 {
+  color: #333;
+}
+
+/* Rule 3 */
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: auto;
+  margin: auto;
+}
+
+a {
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  color: #333;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+/* Rule 5 */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Light theme */
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark theme */
+.dark {
+  background-color: black;
+  color: white;
+}
+
+#signin-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#signin-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+#signin-form input[type="text"],
+#signin-form input[type="password"] {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+#signin-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#signin-form button:hover {
+  background-color: #0056b3;
+}
+
+#error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#userView {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#quote {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#adminLink,
+#logoutLink {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#adminLink:hover,
+#logoutLink:hover {
+  background-color: #0056b3;
+}
+
+#userLink,
+#adminLink,
+#logoutLink {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#adminView {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="password"],
+#signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+#signup-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#signup-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+main {
+  max-width: auto;
+  margin-top: 40px;
+  padding: 20px;
+}

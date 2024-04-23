@@ -1,0 +1,45 @@
+{{!
+
+registration handelbars
+
+}}
+
+<form action="/register" method="POST" name="signup-form" id="signup-form">
+  <label for="firstName">First Name</label>
+  <input type="text" name="firstName" id="firstName" />
+
+  <label for="lastName">Last Name</label>
+  <input type="text" name="lastName" id="lastName" />
+
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username" />
+
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" />
+
+  <label for="confirmPassword">Confirm Password</label>
+  <input type="password" name="confirmPassword" id="confirmPassword" />
+
+  <label for="favoriteQuote">Favorite Quote</label>
+  <input type="text" name="favoriteQuote" id="favoriteQuote" />
+
+  <label for="themePreference">Theme Preference</label>
+  <select name="themePreference" id="themePreference">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select>
+
+  <label for="role">Role</label>
+  <select name="role" id="role">
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+
+  <button type="submit" name="submitButton" id="submitButton">Submit</button>
+  {{#if error}}
+    <div id="error">{{error}}</div>
+  {{/if}}
+</form>
+<a href="/login">Already have an account? Click here to log-in</a>
+
+{{! (you will check to make sure the password and confirm passwords match via client-side validation and in the routes, you do not have to send/check both passwords to the data function), }}

@@ -1,0 +1,25 @@
+{{!
+
+If the user is logged in , and 'GET /user' endpoint is called, you will render this view based on the specs.
+
+}}
+<div id="userView">
+  <p id="welcome">Welcome,
+
+    {{firstName}}
+
+    {{lastName}},
+    <br />
+    The time is now:
+    {{currentTime}}.
+    <br />
+    Your role in the system is:
+    {{role}}.
+  </p>
+  <p id="quote">Favorite Quote: <br /> {{favoriteQuote}}</p>
+  {{#if isAdmin}}
+    <a id="adminLink" href="/admin">Admin Page</a>
+    <br />
+  {{/if}}
+  <a id="logoutLink" href="/logout">Logout</a>
+</div>
